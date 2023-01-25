@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;  
+}
+
+
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+
+  background-color: #414141;
+}
+
+
+
+
+
+
+
+.background {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+
+}
+
+header {
+  height: 28%;
+
+  background-image: url('../public/bg.jpg');
+  background-size: cover;
+  background-position: center;
+
+  color: yellow;
+
+
+  
+}
+header h2{
+  font-size: 7rem;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 8em;
+
+  z-index: 1;
+}
+
+
+
+
+
+
+
+.categories, .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  position: relative;
+
+
+  height: 65em;
+  width: 40em;
+
+
+  background-color: white;
+}
+
+
+.category-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+
+}
+
+.category-buttons button {
+  border: none;
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+
+.btn-container {
+  position: absolute;
+  bottom: 0;
+
+  padding: .5em;
+
+  font-size: 2em;
+}
+
+.btn-container label {
+  padding: 0 1em;
+}
+
+.btn-container button {
+  
+  font-size: 1em;
+
+  border: none;
+  background: none;
+  cursor: pointer;
+}
