@@ -54,35 +54,23 @@ function App() {
 
   return (
     <div className="page-wrapper">
+      <h2 className="header-tag">Star Wars Catalogue</h2>
 
-      <div className="background">
-        <header>
-          <h2 className="header-tag">Star Wars Catalog</h2>
-        </header>
+      <header>
+      
+      </header>
+
+
+        
+      <div className="categories">
+        <CategoryButtons categoryList={categoryList} getCategoryResult={getCategoryResult}></CategoryButtons>
       </div>
 
-      <div className="main-container">
-        
 
 
-        <div className="categories">
-          <h3>Categories</h3>
-          <CategoryButtons categoryList={categoryList} getCategoryResult={getCategoryResult}></CategoryButtons>
-        </div>
+      <div className="details">
+        <h3>Details</h3>
 
-
-
-
-        <div className="details">
-          <h3>Details</h3>
-
-        </div>
-
-
-
-
-
-        
       </div>
     </div>
   );
