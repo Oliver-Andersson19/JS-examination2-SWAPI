@@ -2,45 +2,54 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+  font-family: 'Fox Cavalier', sans-serif;
 }
 
 html{
   font-size: 62.5%;  
+ 
+                                                
   
-  font-family: 'Star Wars', sans-serif;
   letter-spacing: 0.2rem;
 }
 
-
-.page-wrapper {
-
-
-  min-height: 100vh;
-
-  background-color: #414141;
+body {
+  background-color: rgb(39, 39, 39);
 }
 
+.page-wrapper {
+  min-height: 100vh;
+  background-color: rgb(39, 39, 39);
+}
 
 
 
 
 header {
+  position: relative;
   height: 40em;
-  width: 94%;
-  margin: 0 auto;
-  margin-bottom: 2em;
-  border-radius: 8px;
+  /* width: 94%;
+  margin: 0 auto; */
+  /* margin-bottom: 2em; */
+  /* border-radius: 8px; */
   background-image: url('../public/bg.jpg');
   background-size: cover;
   background-position: center;
-
+  filter: brightness(50%) blur(3px);
 }
 
 h2{
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  top: 0;
   text-align: center;
   font-size: 7rem;
-  color: yellow;
-  padding-top: .2em;
+  color: white;
+  text-shadow: 5px 5px #515ae2;
+  padding-top: 2.5em;
+  animation: fadeIn 2.5s ease;
 }
 
 
@@ -50,7 +59,7 @@ h2{
 
 .categories {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 1em;
@@ -59,28 +68,40 @@ h2{
   position: relative;
 
   width: 100%;
-  padding: 2em 6em;
-
-  background-color: white;
+  padding: 1em 6em;
+  margin-top: 2em;
+  
+  /* background-color: white; */
 }
 
 
 .categories button {
   padding: 1em 1em;
-  border: 2px solid gray;
-  background-color: #fff;
+  border: 2px solid rgb(220, 219, 219);
+  background-color: rgb(39, 39, 39);
+  color: rgb(220, 219, 219);
   border-radius: 8px;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 200;
   letter-spacing: 1px;
-  /* font-family: 'Star Wars', sans-serif; */
+  animation: fadeIn 2.5s ease;
+}
+.categories button:active{
+  scale: 0.9;
+}
+
+.categories button:hover {
+  background-color: white;
+  color:#515ae2;
+  
+  transition: .15s all;
 }
 
 .left-arrow, .right-arrow {
   position: absolute;
-  background: none !important;
   font-weight: bold;
-  
+  border: none !important;
+  margin: 0 2em;
 }
 
 
@@ -95,11 +116,30 @@ h2{
 
 
 
-
-
 .details {
-
+  margin-top: 2em;
   padding: 2em;
+  color: rgb(220, 219, 219);
+  
+}
 
-  background-color: white;
+.title {
+  color:#515ae2; 
+}
+
+.detail-row {
+  margin-top: 1em;
+  line-height: 2rem;
+  font-size: 1.5em;
+  animation: fadeIn 2.5s ease;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1
+  }
 }
