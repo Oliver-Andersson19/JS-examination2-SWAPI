@@ -77,8 +77,6 @@ function App() {
     for (const [key, value] of Object.entries(actualData)) {
       list.push({category: key, content: value})
     }
-      
-
 
     console.log(list)
     setResultData(list)
