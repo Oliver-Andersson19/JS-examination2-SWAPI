@@ -18,6 +18,12 @@ function App() {
   const [displayResultData, setShowResultData] = useState(false)
 
 
+  function returnToMenu(){
+    setShowSubCategories(false)
+    setShowCategories(true)
+    setShowResultData(false)
+  }
+
   // Hämta ner kategorierna
   useEffect(() => {
     async function getData() {
@@ -81,8 +87,6 @@ function App() {
     setShowResultData(true)
   }
 
-
-
   return (
     <div className="page-wrapper">
 
@@ -94,13 +98,13 @@ function App() {
         
       <div className="categories">
         {displayCategories && <CategoryButtons categoryList={categoryList} getCategoryResult={getCategoryResult}></CategoryButtons>}
-        {displaySubCategories && <SubCategoryButtons subCategoryList={subCategoryList} getResultData={getResultData} getCategoryResult={getCategoryResult}></SubCategoryButtons>}
+        {displaySubCategories && <SubCategoryButtons subCategoryList={subCategoryList} getResultData={getResultData} getCategoryResult={getCategoryResult} returnToMenu={returnToMenu}></SubCategoryButtons>}
       </div>
 
 
 
       <div className="details">
-        {displayResultData && <Details resultDataList={resultDataList}></Details>}
+        {displayResultData && <Details resultDataList={resultDataList} getResultData={getResultData}></Details>}
       </div>
     </div>
   );

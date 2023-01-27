@@ -46,8 +46,10 @@ h2{
   top: 0;
   text-align: center;
   font-size: 7rem;
-  color: white;
-  text-shadow: 5px 5px #515ae2;
+  font-weight: 400;
+  font-family: 'Star Wars', sans-serif;
+  color: #f4e34c;
+  text-shadow: 0 2px 5px rgba(6, 6, 6, 0.845);
   padding-top: 2.5em;
   animation: fadeIn 2.5s ease;
 }
@@ -69,13 +71,13 @@ h2{
 
   width: 100%;
   padding: 1em 6em;
-  margin-top: 2em;
+  margin-top: 7em;
   
   /* background-color: white; */
 }
 
 
-.categories button {
+.category-btn, .left-arrow, .right-arrow{
   padding: 1em 1em;
   border: 2px solid rgb(220, 219, 219);
   background-color: rgb(39, 39, 39);
@@ -86,15 +88,34 @@ h2{
   letter-spacing: 1px;
   animation: fadeIn 2.5s ease;
 }
-.categories button:active{
+.category-btn:active, .left-arrow:active, .right-arrow:active{
   scale: 0.9;
 }
 
-.categories button:hover {
+.category-btn:hover, .left-arrow:hover, .right-arrow:hover {
   background-color: white;
   color:#515ae2;
   
   transition: .15s all;
+}
+
+.back-btn{
+  position: absolute;
+  top: -2.5em;
+  left: 1.5em;
+  border: none;
+  border-bottom: 2px solid #f4e34c;
+  color: #f4e34c;
+  background-color: rgb(39, 39, 39);
+  font-size: 2em;
+
+  cursor: pointer;
+}
+
+.back-btn:hover{
+  color: white;
+  border-bottom: 2px solid white;
+  transition: .3s;
 }
 
 .left-arrow, .right-arrow {
@@ -117,7 +138,9 @@ h2{
 
 
 .details {
-  margin-top: 2em;
+
+
+  margin: 2em 0em;
   padding: 2em;
   color: rgb(220, 219, 219);
   
@@ -127,11 +150,46 @@ h2{
   color:#515ae2; 
 }
 
-.detail-row {
+.detail-line {
+
+
+
   margin-top: 1em;
   line-height: 2rem;
   font-size: 1.5em;
   animation: fadeIn 2.5s ease;
+}
+
+.detail-row {
+  
+
+  color: #f4e34c;
+  
+  margin: 2em 0em;
+  font-size: 2em;
+}
+
+.detail-row h3 {
+  margin-bottom: 1em;
+}
+
+.detail-row p {
+  margin-left: 2em;
+}
+
+.sub-detail-button {
+
+  padding: .5em 0em;
+  margin-bottom: 1em;
+
+  border: none;
+  border-bottom: 2px solid #515ae2;
+  background: none;
+  color: white;
+
+  letter-spacing: .1em;
+
+  cursor: pointer;
 }
 
 
