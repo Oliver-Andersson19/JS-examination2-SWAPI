@@ -25,7 +25,7 @@ function Details(props) {
         {props.resultDataList.map((element) => {
           if(!Array.isArray(element.content)) {
             // Ta bort understreck och ersätt med space
-            let category = element.category.replace("_", " ")
+            let category = element.category.split("_").join(" ");
             return (<div className='detail-line'><span className='title'>{category}</span> : {element.content}</div>)
           }
         })}
