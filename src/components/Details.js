@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import SubDetailsTitle from './subDetailsTitle';
+import './css/details.css'
 
 function Details(props) {
 
@@ -23,7 +24,9 @@ function Details(props) {
       <div className='right-container'>
         {props.resultDataList.map((element) => {
           if(!Array.isArray(element.content)) {
-            return (<div className='detail-line'><span className='title'>{element.category}</span> : {element.content}</div>)
+            // Ta bort understreck och ersätt med space
+            let category = element.category.replace("_", " ")
+            return (<div className='detail-line'><span className='title'>{category}</span> : {element.content}</div>)
           }
         })}
       </div>

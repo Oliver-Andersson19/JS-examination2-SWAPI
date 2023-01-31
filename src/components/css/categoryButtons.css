@@ -1,0 +1,69 @@
+
+.category-btn, .left-arrow, .right-arrow{
+    padding: 1em 1em;
+    border: 2px solid rgb(220, 219, 219);
+    background-color: rgb(39, 39, 39);
+    color: rgb(220, 219, 219);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 200;
+    letter-spacing: 1px;
+    animation: fadeIn 2.5s ease;
+}
+.category-btn:active, .left-arrow:active, .right-arrow:active{
+    scale: 0.9;
+}
+
+.category-btn:hover, .left-arrow:hover, .right-arrow:hover {
+    background-color: white;
+    color:#515ae2;
+
+    transition: .15s all;
+}
+
+.back-btn{
+    position: absolute;
+    top: -2.5em;
+    left: 1.5em;
+    border: none;
+    border-bottom: 2px solid #f4e34c;
+    color: #f4e34c;
+    background-color: rgb(39, 39, 39);
+    font-size: 2em;
+
+    cursor: pointer;
+}
+
+.back-btn:hover{
+    color: white;
+    border-bottom: 2px solid white;
+    transition: .3s;
+}
+
+.left-arrow, .right-arrow {
+    position: absolute;
+    font-weight: bold;
+    border: none !important;
+    margin: 0 2em;
+}
+
+
+.left-arrow {
+    left: 0;
+}
+
+.right-arrow {
+    right: 0;
+}
+  
+  
+  
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1
+    }
+}

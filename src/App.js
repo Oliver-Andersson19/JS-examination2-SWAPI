@@ -1,7 +1,7 @@
-import CategoryButtons from "./CategoryButtons";
+import CategoryButtons from "./components/CategoryButtons";
 import React, { useState, useEffect } from "react"
-import Details from "./Details";
-import SubCategoryButtons from "./subCategoryButtons";
+import Details from "./components/Details";
+import SubCategoryButtons from "./components/subCategoryButtons";
 
 /* https://swapi.dev/api/ */
 

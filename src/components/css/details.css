@@ -1,0 +1,73 @@
+.details {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  
+    margin-top: 2em;
+    padding: 0 3.5em;
+    color: rgb(220, 219, 219);
+    
+}
+  
+.left-container, .right-container {
+    flex: 0 0 48%;
+}
+  
+.left-container {
+    text-align: right;
+}
+  
+.title {
+    color:#515ae2; 
+}
+  
+.detail-line {
+  
+  
+  
+    margin-top: 1em;
+    line-height: 2rem;
+    font-size: 1.5em;
+    animation: fadeIn 2.5s ease;
+}
+  
+.detail-row {
+    
+  
+    color: #515ae2;
+    
+    margin: 2em 0em;
+    font-size: 2em;
+}
+  
+.detail-row h3 {
+    margin-bottom: 1em;
+  }
+  
+.detail-row p {
+    margin-left: 2em;
+}
+  
+.sub-detail-button {
+  
+    padding: .5em 0em;
+    margin-bottom: 1em;
+  
+    border: none;
+    border-bottom: 2px solid #f4e34c;
+    background: none;
+    color: white;
+  
+    letter-spacing: .1em;
+  
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1
+    }
+}
