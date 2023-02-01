@@ -13,7 +13,6 @@ function SearchBar(props) {
 
     return (
         <input type="text" placeholder={'Search ' + props.activeCategory + "..."} className='search-bar' onKeyDown={handleEnter}/>
-        
     )
 }
 

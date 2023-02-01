@@ -9,13 +9,14 @@ function SubCategoryButtons(props) {
 
 
   useEffect(() => {
-    const link = props.subCategoryList[2].link;
+    if(props.subCategoryList.length !== 2){
+      const link = props.subCategoryList[2].link;
 
-    let activeCategoryString = link.substring(link.indexOf("/api/") + 1, link.lastIndexOf("/"))
-    activeCategoryString = activeCategoryString.substring(activeCategoryString.indexOf("/") + 1, activeCategoryString.lastIndexOf("/"))
-    
-    console.log(activeCategoryString)
-    setActiveCategory(activeCategoryString);
+      let activeCategoryString = link.substring(link.indexOf("/api/") + 1, link.lastIndexOf("/"))
+      activeCategoryString = activeCategoryString.substring(activeCategoryString.indexOf("/") + 1, activeCategoryString.lastIndexOf("/"))
+      
+      setActiveCategory(activeCategoryString);
+    }
   }, [props.subCategoryList])
   
 
