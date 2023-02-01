@@ -1,25 +1,31 @@
 .details {
+ 
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
 
+    width: 90vw;
+    margin: 0 auto;
+    height: 50em;
 
-    margin-top: 2em;
-    padding: 0 3.5em;
+
+    margin-top: 6em;
+    padding: 10em;
     color: rgb(220, 219, 219);
     
 }
   
 .left-container, .right-container {
     flex: 0 0 48%;
+ 
 }
-  
+
 .left-container {
     text-align: right;
 }
   
 .title {
-    color:#515ae2; 
+    color: #f4e34c; 
 }
   
 .detail-line {
