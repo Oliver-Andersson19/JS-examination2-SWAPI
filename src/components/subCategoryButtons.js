@@ -1,5 +1,6 @@
 import React from 'react'
 import App from '../App';
+import SearchBar from './SearchBar';
 import "./css/categoryButtons.css"
 
 
@@ -10,6 +11,7 @@ function SubCategoryButtons(props) {
           <i className="fa-solid fa-chevron-left"></i>
         </button>
 
+        <SearchBar getCategoryResult={props.getCategoryResult}></SearchBar>
 
         {props.subCategoryList.map((category) => {
           if(!category.hasOwnProperty('next') && !category.hasOwnProperty('previous')) {

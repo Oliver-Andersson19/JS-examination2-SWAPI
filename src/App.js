@@ -44,7 +44,7 @@ function App() {
   // Hämta ner underkategori som man tryckt på
   async function getCategoryResult(link) {
     const actualData = await fetch(link).then(response => response.json());
-      
+  
     const list = []
     list.push({next: actualData["next"]});
     list.push({previous: actualData["previous"]})
