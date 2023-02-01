@@ -17,6 +17,8 @@ function App() {
   const [resultDataList, setResultData] = useState({})
   const [displayResultData, setShowResultData] = useState(false)
 
+  
+
 
   function returnToMenu(){
     setShowSubCategories(false)
