@@ -11,7 +11,8 @@ function SubCategoryButtons(props) {
   useEffect(() => {
     if(props.subCategoryList.length !== 2){
       const link = props.subCategoryList[2].link;
-
+      // Tar ut kategori ordet ur länken, används i searchbar
+      // exempel: people - "https://swapi.dev/api/people/"
       let activeCategoryString = link.substring(link.indexOf("/api/") + 1, link.lastIndexOf("/"))
       activeCategoryString = activeCategoryString.substring(activeCategoryString.indexOf("/") + 1, activeCategoryString.lastIndexOf("/"))
       

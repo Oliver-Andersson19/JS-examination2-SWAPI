@@ -52,7 +52,6 @@ function App() {
     list.push({previous: actualData["previous"]})
 
     actualData["results"].forEach(element => {
-      // list.push(element)
       // kolla om name eller title finns beroende på om det är en film eller inte
       if(element.name === undefined) {
         list.push({category: element.title, link: element.url})
@@ -68,10 +67,9 @@ function App() {
   }
 
 
+  // Hämta ner details
   async function getResultData(link) {
     const actualData = await fetch(link).then(response => response.json());
-      
-    //const data = actualData
 
     const list = []
 
